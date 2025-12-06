@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Screen</title>
+    <link rel="stylesheet" href="game.css">
+    <script src="game.js"></script>
+</head>
+<body>
+    <button class="card" id="card1" onclick="card('1')"></button>
+    <button class="card" id="card2" role="button" onclick="card('2')"></button>
+    <button class="card" id="card3" role="button" onclick="card('3')"></button>
+    <button class="card" id="card4" role="button" onclick="card('4')"></button>
+    <button class="operation" id="operation1" role="button" onclick="operation('1')">+</button>
+    <button class="operation" id="operation2" role="button" onclick="operation('2')">-</button>
+    <button class="operation" id="operation3" role="button" onclick="operation('3')">x</button>
+    <button class="operation" id="operation4" role="button" onclick="operation('4')">÷</button>
+    <button class="operation" id="operation5" role="button" onclick="operation('5')">(</button>
+    <button class="operation" id="operation6" role="button" onclick="operation('6')">)</button>
+    <input type="text" id="txt" placeholder="Press the buttons to enter your expression"></input>
+    <button id="submit" onclick="submit()">SUBMIT</button>
+    <button id="giveup" onclick="giveup()">GIVE UP</button>
+    <button id="reset" onclick="reset()">Reset Cards</button>
+    <div id="correct">Correct!</div>
+    <div id="incorrect">Try again!</div>
+    <div id="giveup_msg">Better luck next time ◡̈</div>
+    <div id="invalid">Invalid Input シ</div>
+    <div id="title">24</div>
+    <div id="subtitle">a math card game</div>
+    <button id="home" role="button" onclick="home()">Home</button>
+</body>
+</html>
